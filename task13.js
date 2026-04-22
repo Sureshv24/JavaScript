@@ -1,3 +1,6 @@
+console.log("21/04/2026 Tasks");
+
+
 let students = [
  {id:1, name:"Naveen", mark:85, course:"MERN"},
  {id:2, name:"John", mark:45, course:"Python"},
@@ -5,8 +8,9 @@ let students = [
  {id:4, name:"Arun", mark:95, course:"React"}
 ];
 
-
-for(let i=0; i<2; i++){
-    console.log(students[i]);
+for(let s of students){
+    console.log(s.id, s.name, s.mark, s.course);
+    if(s.id == 2){
+        break;   
+    }
 }
-console.log("10");
